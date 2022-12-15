@@ -1,4 +1,6 @@
-console.log("hii ra  wdkcc");
-var input=prompt(
-"enter  naem");
-alert(input+"something wrong happen");
+var btnClick =document.querySelector("#btn-click");
+btnClick.addEventListener("click",function clickHandler(){
+console.log( 'https://www.google.co.in/')
+
+})
+
