@@ -1,9 +1,7 @@
 var btnClick =document.querySelector("#btn-click");
 var txtinput=document.querySelector("#txt");
-
+var txtoutput=document.querySelector("#output-txt");
 btnClick.addEventListener("click",function clickHandler(){
-console.log( 'https://www.google.co.in/')
-console.log(txtinput.value)
+  txtoutput.innerText=" translated text "+txtinput.value;
 
 })
-
