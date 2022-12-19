@@ -5,7 +5,7 @@ var serverurl="https://api.funtranslations.com/translate/minion.json"
 
 
 function gettTranslation(text){
-  return serverurl+"?"+"text"+ text;
+  return serverurl+"?"+"text="+text;
 
 }
 
@@ -16,10 +16,10 @@ function errorHandler(error){
 
 
 function clickHandler(){
-  var text= txtinput.value;
+  var inputText= txtinput.value;
 
-fetch(gettTranslation(text))
-.then(Response =>Response.json())
+fetch(gettTranslation(inputText))
+.then(Response=>Response.json())
 .then(json=>  { var translatedText =json.contents.translated;
   txtoutput.innerText=translatedText;
 })
@@ -27,5 +27,4 @@ fetch(gettTranslation(text))
  
 };
 
-
-btnClick.addEventListener("click",clickHandler)
+btnClick.addEventListener("click",clickHandler())
