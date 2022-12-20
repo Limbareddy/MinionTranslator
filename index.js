@@ -27,4 +27,4 @@ fetch(gettTranslation(inputText))
  
 };
 
-btnClick.addEventListener("click",clickHandler())
+btnClick.addEventListener("click",clickHandler)
