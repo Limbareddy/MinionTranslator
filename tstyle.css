@@ -1,7 +1,9 @@
 :root{
     --primarycolor:darkgoldenrod; 
 }
-
+body{
+    margin: 0;
+}
 
 #header{
     margin:auto;
@@ -19,13 +21,13 @@
     display: block;
     margin:1rem 3rem;
     padding:1rem 2rem;
-    height: 10vh;
+    height: 17vh;
     width: 80%;
 
 }
 #output-txt{
 border:2px solid black;
-height: 10vh;
+height: 17vh;
 margin: 1rem 3rem;
 padding: 1rem 3rem;
 width:80%;
@@ -38,16 +40,17 @@ text-align: center;
 padding:0rem 3rem;
 margin: 1rem 3rem;
 max-width: 200px;
-background-color: white;
+color: white;
+background-color: var(--primarycolor);
 }
 footer{
     text-align: center;
-    height: 21vh;
-    width: 100%;
-    margin: auto;
-    display: block;
-    padding-bottom: 0rem;
+    padding: 2rem;
+    display:block;
+    margin: 0;
     background-color: var(--primarycolor);
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
     
 
 }
